@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <!--recieve-->
+
+    <com.kanebay.lepu.askdr.common.ui.common.CircularImage
+        android:id="@+id/imgView_receive_header"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/chat_time"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/icon_header_default" />
+
+    <RelativeLayout
+        android:id="@+id/layout_receive_chatting_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgView_receive_header"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/imgView_receive_header"
+        android:background="@drawable/chat_bg_patient"
+        android:maxWidth="230dp">
+
+        <TextView
+            android:id="@+id/txt_receive_chatting_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxWidth="230dp"
+
+            android:paddingLeft="5dp"
+            android:textColor="@color/chat_session_color"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imgView_receive_photo"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:paddingLeft="8dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/pb_receive_media_progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout_receive_chatting_content"
+        android:layout_alignTop="@+id/imgView_receive_header"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/layout_receive_chatting_content"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/receive_media_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout_receive_chatting_content"
+        android:layout_alignTop="@+id/imgView_receive_header"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/layout_receive_chatting_content"
+        android:src="@drawable/chat_resend" />
+
+    <ImageView
+        android:id="@+id/imgView_receive_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout_receive_chatting_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/imgView_receive_header"
+        android:background="@drawable/voice_icon_receive_nor" />
+
+    <TextView
+        android:id="@+id/receive_voice_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout_receive_chatting_content"
+        android:layout_toEndOf="@+id/layout_receive_chatting_content"
+        android:layout_toRightOf="@+id/layout_receive_chatting_content"
+        android:paddingBottom="10dp"
+        android:textColor="@color/txt_hint" />
+
+    <!--sender-->
+
+
+    <com.kanebay.lepu.askdr.common.ui.common.CircularImage
+        android:id="@+id/imgView_sender_header"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/chat_time"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/icon_header_default" />
+    <!--android:src="@drawable/icon_header_default"-->
+
+    <RelativeLayout
+        android:id="@+id/laout_sender_chatting_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgView_sender_header"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/imgView_sender_header"
+        android:textColor="@color/white">
+        <!--android:background="@drawable/chat_bg_doctor"-->
+
+        <TextView
+            android:id="@+id/txt_sender_chatting_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:maxWidth="230dp"
+            android:paddingRight="5dp"
+            android:text="112223"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imgView_sender_photo"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:paddingRight="8dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/pb_sender_media_progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/laout_sender_chatting_content"
+        android:layout_alignTop="@+id/laout_sender_chatting_content"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/send_voice_time" />
+
+
+    <ImageView
+        android:id="@+id/sender_media_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/laout_sender_chatting_content"
+        android:layout_alignTop="@+id/laout_sender_chatting_content"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/laout_sender_chatting_content"
+        android:src="@drawable/chat_resend" />
+
+
+    <TextView
+        android:id="@+id/chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/bg_color"
+        android:text="1111111111"
+        android:textColor="@color/txt_hint"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imgView_sender_text_resend"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@+id/laout_sender_chatting_content"
+        android:layout_alignTop="@+id/laout_sender_chatting_content"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/send_voice_time"
+        android:src="@drawable/chat_resend" />
+
+    <ProgressBar
+        android:id="@+id/pb_sender_text_resend"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@+id/laout_sender_chatting_content"
+        android:layout_alignTop="@+id/laout_sender_chatting_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/send_voice_time" />
+
+    <ImageView
+        android:id="@+id/imgView_sender_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/laout_sender_chatting_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_toLeftOf="@+id/imgView_sender_header"
+       />
+
+    <!--android:background="@drawable/voice_icon_sender_nor"-->
+    <!--android:background="@drawable/voice_icon_sender_nor"-->
+
+    <!--android:src="@drawable/voice_icon_sender_nor"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--android:background="@anim/voice_play_animation"-->
+    <!--android:src="@drawable/voice_play_animation"-->
+    <TextView
+        android:id="@+id/send_voice_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/laout_sender_chatting_content"
+        android:layout_toLeftOf="@+id/laout_sender_chatting_content"
+        android:layout_toStartOf="@+id/laout_sender_chatting_content"
+        android:paddingBottom="10dp"
+        android:textColor="@color/txt_hint" />
+
+</RelativeLayout>

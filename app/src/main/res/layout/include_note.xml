@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt_title_note"
+    android:layout_width="60dp"
+    android:layout_alignParentRight="true"
+    android:layout_height="fill_parent"
+    android:layout_centerVertical="true"
+    android:gravity="right|center_vertical"
+    android:paddingRight="@dimen/margin_right_15"
+    android:textSize="@dimen/title_right_txt_size"
+    android:textColor="@color/white"
+    android:text="笔记" />
+
+

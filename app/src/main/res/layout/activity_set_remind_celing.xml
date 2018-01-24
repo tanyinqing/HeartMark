@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<!-- 这个是标题栏 -->
+    <com.yikang.heartmark.view.TopBarView
+        android:id="@+id/setRemindCelingTopBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 运用相对布局来标定日历的位置 -->
+    <RelativeLayout
+        android:id="@+id/layout_calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/show_item_img"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/calendarCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:textColor="@color/app_color"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/calendarLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/arrow_remind_left_blue" />
+
+        <ImageButton
+            android:id="@+id/calendarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/arrow_remind_right_blue" />
+
+        <com.yikang.heartmark.view.CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/calendarCenter" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/setRemindCelingListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent" 
+        android:visibility="gone"
+         >
+    </ListView>
+    <ImageView
+        android:id="@+id/setRemindCelingimageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/setremindcelingimageview"
+        android:visibility="gone"
+         >
+    </ImageView>
+
+</LinearLayout>

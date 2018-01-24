@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <com.yikang.heartmark.view.TopBarView
+        android:id="@+id/mainServiceShopHuizhenDetailsTopBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout 
+            android:id="@+id/main_service_shop_xinshuai_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                >
+                <ImageView 
+                    android:id="@+id/huizhen_item01_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_service_shop_huizhen_item01"
+                    />
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView 
+                        android:id="@+id/huizhen_item01_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="胡大一    主任医师"
+                        android:textSize="20sp"
+                        />
+                    <TextView 
+                        android:id="@+id/huizhen_item01_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="北京大学人民医院"
+                        android:textSize="16sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        />
+                    <TextView 
+                        android:id="@+id/huizhen_item01_cando"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="擅长：心血管疾病、心脏起搏"
+                        android:textSize="16sp"
+                        />                                        
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/huizhen_details_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_service_shop_huizhen_details_tel"
+                android:layout_gravity="center_horizontal"
+                />
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/typeface"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/huizhen_item01_context"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e7faff"
+                android:padding="10dp"
+                android:text="胡大一教授，男，1941年5月生，1965年毕业于北京医科大学，1981年在中国协和医科大学获硕士学位，1985-1986年在美国罗马琳达大学医学学院进修心血管病介入治疗。现为中国医学科学院、中国协和医科大学心血管研究所、阜外心血管病医院研究员、博士生导师，院（所）长顾问。并任中国医师协会副会长，中华医学会心血管病学分会主任委员、国务院学位委员会第五届学科评议组成员、亚太介入心脏病学会前主席，以及中国心血管病杂志总编辑、英国医学杂志中文版和中国循环杂志副总编辑，中华内科杂志、中国介入心脏病杂志、临床内科杂志"
+                android:textColor="@color/typeface"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>     
+</LinearLayout>

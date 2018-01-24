@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.yikang.heartmark.view.TopBarView
+        android:id="@+id/mainServiceShopTopBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <!-- 这个是单独的一级 -->
+    <LinearLayout
+        android:id="@+id/service_shop_consultation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/mainServiceShopTopBar" >
+        <LinearLayout
+            android:id="@+id/main_service_shop_consultation"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_service_shop_consultation" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="专家会诊"
+                android:textColor="#ABADAE"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+<!-- 这个是下面的四个按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/service_shop_consultation"
+        android:orientation="vertical" >
+        <!-- 这个是最上面的横线 -->
+        <View
+	       android:layout_width="match_parent"
+	       android:layout_height="0.5dp"
+	       android:background="@color/typeface" />
+        <!-- 这是第一个横向 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:id="@+id/main_service_shop_xinshuai"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_service_shop_xinshuai" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="心衰管理产品"
+                    android:textColor="#FF6E70"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <View 
+               android:layout_width="0.5dp"
+               android:layout_height="match_parent"
+               android:background="@color/typeface"
+               />
+            <LinearLayout
+                android:id="@+id/main_service_shop_xuetang"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_service_shop_xuetang" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="血糖管理产品"
+                    android:textColor="#7FA84B"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View 
+         android:layout_width="match_parent"
+         android:layout_height="0.5dp"
+         android:background="@color/typeface"
+         />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+            <LinearLayout
+                android:id="@+id/main_service_shop_xindian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_service_shop_xindian" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="远程心电监护"
+                    android:textColor="#FFAE00"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <View 
+               android:layout_width="0.5dp"
+               android:layout_height="match_parent"
+               android:background="@color/typeface"
+               />
+            <LinearLayout
+                android:id="@+id/main_service_shop_zhinenghujiao"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_service_shop_zhinenghujiao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="一键式智能呼叫"
+                    android:textColor="#21A9BD"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+	       android:layout_width="match_parent"
+	       android:layout_height="0.5dp"
+	       android:background="@color/typeface" />
+    </LinearLayout>
+</RelativeLayout>

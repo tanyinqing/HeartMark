@@ -1,0 +1,801 @@
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="app_name">心衰管理</string>
+    <string name="main_title">心衰管理</string>
+    <string name="zixun">心衰百科</string>
+    <string name="zixun_info">护理手册</string>
+    <string name="zixun_sport">饮食运动</string>
+    <string name="zixun_expert">心视野</string>
+    <string name="zixun_detail">详情</string>
+    <string name="celing_open_fail">蓝牙打开失败,请您打开权限后重试</string>
+    <string name="celing">智能检测</string>
+    <string name="celing_data">数据管理</string>
+    <string name="yongyao">科学用药</string>
+    <string name="yongyao_remind">用药提醒</string>
+    <string name="yongyao_info">常见问题</string>
+    <string name="yongyao_add">添加用药提醒</string>
+    <string name="huli">日常护理</string>
+    <string name="huli_patient">病人护理</string>
+    <string name="huli_weight">体重记录</string>
+    <string name="huli_mood">健康心情</string>
+    <string name="huli_life">生活日志</string>
+    <string name="huli_weight_info">体重详情</string>
+    <string name="yishi">智能咨询</string>
+    <string name="yishi_chat">咨询会话</string>
+    <string name="regist">注册</string>
+    <string name="regist_phone_hint">请输入手机号</string>
+    <string name="regist_code_hint">请输入验证码</string>
+    <string name="password_hint">请设置一个密码</string>
+    <string name="password_again_hint">请再次输入密码</string>
+    <string name="regist_next_hint">下一步，完善个人信息</string>
+    <string name="regist_next">下一步</string>
+    <string name="regist_info">信息</string>
+    <string name="regist_info_name">姓名</string>
+    <string name="regist_info_name_hint">请输入姓名</string>
+    <string name="regist_info_age">年龄</string>
+    <string name="regist_info_age_hint">请选择年龄</string>
+    <string name="regist_info_weight">体重</string>
+    <string name="regist_info_weight_hint">请选择体重</string>
+    <string name="regist_info_number">医生编号</string>
+    <string name="regist_info_number_hint">手动输入或扫描</string>
+    <string name="login">用户登录</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_login">立即登录</string>
+    <string name="login_please">登录</string>
+    <string name="set">个人中心</string>
+    <string name="centerinfo">个人资料</string>
+    <string name="set_life_data">生活日志</string>
+    <string name="set_about">关于我们</string>
+    <string name="set_limit">免责声明</string>
+    <string name="set_other">其他</string>
+    <string name="set_friend">好友列表</string>
+    <string name="set_friend_add">添加好友</string>
+    <string name="set_friend_add_hint">请输入好友账号</string>
+    <string name="set_friend_add_button">加入到好友列表</string>
+    <string name="set_collect">我的收藏</string>
+    <string name="set_life_data_detail">详情</string>
+    <string name="news">消息</string>
+    <string name="news_friend">好友数据</string>
+    <string name="news_notice">消息公告</string>
+    <string name="ok">确定</string>
+    <string name="phone_hint">请输入手机号码</string>
+    <string name="phone_format_hint">请输入11位的手机号</string>
+    <string name="phone_error">请输入正确的手机号码</string>
+    <string name="phone_notregist">该用户不存在</string>
+    <string name="weight_add">添加体重</string>
+    <string name="evaluate">心衰评估</string>
+    <string name="time_hint">请选择时间</string>
+    <string name="forget_pass">忘记密码</string>
+    <string name="forget_success">修改成功</string>
+    <string name="forget_fail">修改失败,请重试</string>
+    <string name="code_no">请获取短信验证码</string>
+    <string name="code_error">短信验证码有误</string>
+    <string name="code_send">短信验证码已发送至%s</string>
+    <string name="finish">完成</string>
+    <string name="save">完成</string>
+    <string name="help">心衰助手</string>
+    <string name="phone">电话咨询</string>
+    <string name="service">更多服务</string>
+    <string name="service_shop">健康商城</string>
+    <string name="service_shop_zhineng">一键式智能呼叫</string>
+    <string name="service_shop_xindian">远程心电监护</string>
+    <string name="service_shop_xuetang">血糖管理产品</string>
+    <string name="service_shop_xinshuai">心衰管理产品</string>
+    <string name="service_shop_huizhen">专家会诊</string>
+    <string name="service_shop_details">产品详情</string>
+    <string name="service_shop_details_huizhen">专家简介</string>
+    <string name="service_other">更多应用</string>
+    <string name="help_weight">体重记录</string>
+    <string name="help_water">出入水量</string>
+    <string name="help_heart">心率记录</string>
+    <string name="help_heart_info">心率详情</string>
+    <string name="pinggu">病情评估</string>
+    <string name="pinggu_history">历史评估</string>
+    <string name="pinggu_count">已有%d人进行评估</string>
+    <string name="pinggu_history_count">第%d次分析评估报告</string>
+    <string name="remind">智能提醒</string>
+    <string name="remind_celing">测量提醒</string>
+    <string name="remind_yao">用药提醒</string>
+    <string name="remind_huli">护理任务提醒</string>
+    <string name="remind_huli_add">添加护理提醒</string>
+    <string name="phone_number_ofzixun">tel://4000906162</string>
+
+    <!-- Toast  Hint -->
+    <string name="version_new">当前已是最新版本,无需更新</string>
+    <string name="version_old">有新版本</string>
+    <string name="download_fail">下载失败</string>
+    <string name="push_fail">推送失败</string>
+    <string name="push_success">推送成功</string>
+    <string name="choose_type">请先选择类型</string>
+    <string name="good_success">点赞成功</string>
+    <string name="good_fail">点赞失败</string>
+    <string name="house_success">收藏成功</string>
+    <string name="house_lose">取消收藏</string>
+    <string name="house_fail">收藏失败</string>
+    <string name="pinggu_choose">请选择</string>
+    <string name="choose_time">请选择时间</string>
+    <string name="choose_week">请选择星期</string>
+    <string name="choose_name">请选择名字</string>
+    <string name="save_success">保存成功</string>
+    <string name="sync_success">同步成功</string>
+    <string name="sync_fail">同步失败</string>
+    <string name="time_late">选择时间不能早于当前时间</string>
+    <string name="time_early">选择时间不能晚于当前时间</string>
+    <string name="alarm_repeat">已经设置过当前提醒</string>
+    <string name="scan_choose">请选择标曲</string>
+    <string name="no_data">没有数据</string>
+    <string name="no_data_send">请输入内容后发送</string>
+    <string name="celing_notif_info">提示您获取结果</string>
+    <string name="check_network">请检查网络</string>
+    <string name="check_network_timeout">网络连接超时，请重试</string>
+
+    <!-- Dialog  Hint -->
+    <string name="cache_title">清除缓存</string>
+    <string name="cache_msg">是否清除缓存</string>
+    <string name="phone_title">提示</string>
+    <string name="phone_msg">设置您的靓照</string>
+    <string name="phone_graph">拍照</string>
+    <string name="phone_album">相册</string>
+    <string name="useresc_title">退出当前账号</string>
+    <string name="useresc_msg">是否退出当前账号</string>
+    <string name="upgrade_title">版本升级</string>
+    <string name="check_time">选择时间</string>
+    <string name="push_title">推送</string>
+    <string name="push_msg">是否推送给好友</string>
+    <string name="pinggu_title">进行评估</string>
+    <string name="pinggu_msg">是否测量NT-proBNP值后进行评估</string>
+    <string name="pinggu_result_msg">此项评估仅供参考,如需更专业的评估请检测NT-proBNP</string>
+    <string name="error_style_empty">style cannot be empty</string>
+    <string name="error_alias_empty">alias cannot be empty</string>
+    <string name="error_tag_empty">tag cannot be empty</string>
+    <string name="error_tag_gs_empty">Invalid format</string>
+    <string name="error_network">Failed to init due to network exception.</string>
+    <string name="logining">Running in background. Please see log.</string>
+    <string name="setting_su">Succeed to set</string>
+
+    <string-array name="stream_entries">
+        <item>通话</item>
+        <item>系统</item>
+        <item>铃声</item>
+        <item>音乐</item>
+        <item>闹铃</item>
+        <item>通知</item>
+    </string-array>
+    <string-array name="stream_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="voicer_cloud_entries">
+        <item>小燕</item>
+        <item>小宇</item>
+        <item>凯瑟琳</item>
+        <item>亨利</item>
+        <item>玛丽</item>
+        <item>小研</item>
+        <item>小琪</item>
+        <item>小峰</item>
+        <item>小梅</item>
+        <item>小莉</item>
+        <item>小蓉</item>
+        <item>小芸</item>
+        <item>小坤</item>
+        <item>小强 </item>
+        <item>小莹</item>
+        <item>小新</item>
+        <item>楠楠</item>
+        <item>老孙</item>
+    </string-array>
+    <string-array name="voicer_cloud_values">
+        <item>xiaoyan</item>
+        <item>xiaoyu</item>
+        <item>catherine</item>
+        <item>henry</item>
+        <item>vimary</item>
+        <item>vixy</item>
+        <item>xiaoqi</item>
+        <item>vixf</item>
+        <item>xiaomei</item>
+        <item>xiaolin</item>
+        <item>xiaorong</item>
+        <item>xiaoqian</item>
+        <item>xiaokun</item>
+        <item>xiaoqiang</item>
+        <item>vixying</item>
+        <item>xiaoxin</item>
+        <item>nannan</item>
+        <item>vils</item>
+    </string-array>
+
+    <string name="text_tts_source">董利康山西运城人士,2013年获得状元&#8230;</string>
+    <string name="text_tts_source_en">fuck you</string>
+    <string name="tts_toast_format" formatted="false">缓冲进度为%d%%，播放进度为%d%%</string>
+
+    <string-array name="evaluate_title_list">
+        <item>是否咳嗽、喘不上气？</item>
+        <item>呼吸受阻，肺部出现啰音？</item>
+        <item>在家无法从事简单的家务？</item>
+        <item>需要卧床疗养？</item>
+        <item>步行或上楼梯很困难？</item>
+        <item>身体浮肿情况？</item>
+        <item>夜间睡眠质量差？</item>
+        <item>夜间睡觉无法平躺？</item>
+        <item>夜间有出现阵发性呼吸困难？</item>
+        <item>是否同时患有以下疾病？</item>
+    </string-array>
+    <string-array name="evaluate_text1_list">
+        <item>不是</item>
+        <item>没有</item>
+        <item>不是</item>
+        <item>不是</item>
+        <item>不是</item>
+        <item>无</item>
+        <item>不是</item>
+        <item>不是</item>
+        <item>没有</item>
+        <item>糖尿病</item>
+    </string-array>
+    <string-array name="evaluate_text2_list">
+        <item>有时</item>
+        <item>有时</item>
+        <item>可以做部分家务</item>
+        <item>有时需要</item>
+        <item>有时</item>
+        <item>双腿肿胀</item>
+        <item>有时</item>
+        <item>有时</item>
+        <item>有时</item>
+        <item>高血压</item>
+    </string-array>
+    <string-array name="evaluate_text3_list">
+        <item>是</item>
+        <item>经常</item>
+        <item>完全不能</item>
+        <item>长期需要</item>
+        <item>经常</item>
+        <item>双腿肿胀+腹部肿胀</item>
+        <item>经常</item>
+        <item>经常</item>
+        <item>经常</item>
+        <item>冠心病</item>
+    </string-array>
+    <string-array name="week_list">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+
+
+    <!--聊天  询医-->
+    <string name="move_to_cancel">手指上滑，取消发送</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="time_too_long">说话时间超长</string>
+    <string name="time_too_short">说话时间太短</string>
+    <string name="recording_error_try_again">出错了，请重新录音</string>
+    <string name="recording_tip">询医需要使用手机的麦克风:请在系统设置中打开麦克风功能。</string>
+
+    <string name="chat_message_new_relation">现在可以跟你的患者聊天了</string>
+    <string name="no_audio_permission">询医需要使用手机的麦克风;请在系统设置中打开麦克风功能</string>
+    <string name="chat_is_resend_photo">是否重新发送图片</string>
+
+    <string name="login_user_register">注册</string>
+    <string name="exit">退出登录</string>
+    <string name="patient_app_download">患者版下载</string>
+    <string name="doctor_app_download">医生版下载</string>
+    <string name="not_doctor">不是医生？</string>
+    <string name="sign_in_phone_number">手机号:</string>
+    <string name="sign_in_user_password">密&#160;&#160;&#160;&#160;码:</string>
+    <string name="sign_in_forget_password">忘记密码</string>
+    <string name="sign_in_my_register">我要注册</string>
+    <string name="sign_in_title_reset_pwd_one_step">重设密码(1/2)</string>
+    <string name="next">下一步</string>
+    <string name="cancel">取消</string>
+    <string name="giveup">放弃</string>
+
+    <string name="later">以后决定</string>
+    <string name="receive">接受</string>
+    <string name="received">已添加</string>
+
+    <string name="addHospital">添加医院</string>
+
+    <string name="yes">确定</string>
+    <string name="tip">温馨提示</string>
+    <string name="txtHospital">请输入医院全称</string>
+    <string name="txtHospitalCategory">请选择医院类别</string>
+    <string name="txtDepartTip">请输入科室全称</string>
+
+    <string name="smsInvite">短信邀请</string>
+    <string name="add">添加</string>
+    <string name="isee">知道了</string>
+    <string name="update_success">更新成功</string>
+    <string name="set_password">设置密码</string>
+    <string name="sign_in_login">登&#160;&#160;&#160;&#160;录</string>
+    <string name="sign_in_phone_number_reset">手机号码:</string>
+    <string name="sign_in_title_reset_pwd_two_step">重设密码(2/2)</string>
+    <string name="sign_in_please_input_identifying_code">请输入验证码</string>
+    <string name="sign_in_set_pwd_less_six_length">设置密码(至少6位以上)</string>
+    <string name="sign_in_send">发&#160;&#160;&#160;&#160;&#160;&#160;送</string>
+    <string name="sign_in_resend_identify_code">重新发送验证码</string>
+    <string name="sign_in_has_send_identify_code">验证码已发送(60)</string>
+    <string name="sign_in_dlg_identify_code_title">确认手机号码</string>
+
+    <string name="tip_has_register">此号码已被注册</string>
+    <string name="tip_phone_error">请输入一个11位的手机号码</string>
+    <string name="sign_in_dlg_identify_code_tip">将发送验证码到这个号码:</string>
+    <string name="register_fill_info">填写资料</string>
+    <string name="send_identify_code_success">验证码发送成功</string>
+    <string name="phone_number">手机号码</string>
+    <string name="user_name">姓名</string>
+    <string name="register_technical_title">技术职称</string>
+    <string name="register_teaching_title">教学职称(选填)</string>
+    <string name="register_hospital_or_section_office">医院&#038;科室</string>
+    <string name="section_office">科室</string>
+    <string name="register_agreement_tip">点击下一步表示你已同意我们的</string>
+    <string name="register_user_agreement">用户协议</string>
+    <string name="register_title_senior_doctor">主任医师</string>
+    <string name="register_title_sub_senior_doctor">副主任医师</string>
+    <string name="register_title_attending_doctor">主治医师</string>
+    <string name="register_title_resident">住院医师</string>
+    <string name="professor">教授</string>
+
+    <string name="hospital_level3">三级综合医院</string>
+    <string name="hospital_level2">二级综合医院</string>
+    <string name="hospital_level1">一级综合医院</string>
+    <string name="special_hospital">专科医院</string>
+    <string name="health_center">卫生院</string>
+    <string name="maternal_and_child_hospital">妇幼保健院</string>
+    <string name="Community_Health_Centre">社区卫生服务中心</string>
+    <string name="Private_clinic">民营诊所</string>
+    <string name="Military_Hospital">军队医院</string>
+    <string name="enterprise_hospital">企业医院</string>
+    <string name="other">其它</string>
+
+    <string name="expertise_title">擅长治疗(选填)</string>
+    <string name="expertise">擅长治疗</string>
+    <string name="career_title">执业经历(选填)</string>
+    <string name="career">执业经历</string>
+    <string name="career_edit">执业经历(选填)</string>
+    <string name="associate_professor">副教授</string>
+    <string name="lecturer">讲师</string>
+    <string name="assistant">助教</string>
+    <string name="notFound">找不到?</string>
+    <string name="region_selector_choice_region">选择地区</string>
+    <string name="region_selector_choice_hospital">选择医院</string>
+    <string name="region_selector_choice_department">选择科室</string>
+    <string name="region_selector_title">选择地区</string>
+    <string name="dept_selector_title">科室选择</string>
+    <string name="hospital_selector_title">医院选择</string>
+
+    <string name="patients_title">我的患者</string>
+    <string name="patients_select">选择患者</string>
+    <string name="new_patient">新患者</string>
+    <string name="mark">标签</string>
+    <string name="age">年龄</string>
+    <string name="my">我的</string>
+
+    <string name="gender">性别</string>
+    <string name="birthday">生日</string>
+    <string name="area">地区</string>
+    <string name="info_tip">*请填写真实信息，您的个人信息只有您的医生能看到</string>
+
+    <string name="write_tip">请认真填写，所有的医院信息都会受到审核</string>
+
+    <string name="address">地址</string>
+    <string name="man">男</string>
+    <string name="female">女</string>
+    <string name="unknown">未知</string>
+    <string name="age_tip">岁</string>
+    <string name="press_to_talk">按住说话</string>
+    <string name="release_to_finish">松开结束</string>
+    <string name="send">发送</string>
+    <string name="delete">删&#160;&#160;&#160;&#160;除</string>
+    <string name="notes">笔记</string>
+    <string name="send_message">发信息</string>
+    <string name="call_phone">打电话</string>
+    <string name="phone_number_null">手机号为空</string>
+    <string name="more">更多</string>
+    <string name="album">相册</string>
+    <string name="use">使用</string>
+    <string name="take_photo">拍照</string>
+    <string name="choose_photo">照片选择</string>
+    <string name="other_album">其他相册</string>
+    <string name="take_photo_success">拍照成功</string>
+    <string name="input_can_not_null">文字不能为空</string>
+    <string name="tag">标签</string>
+    <string name="all_tags">所有标签</string>
+    <string name="input_tag_tip">输入标签,如心脏支架、冠心病等</string>
+    <string name="setting">设置</string>
+    <string name="max_select_image_tip">您最多允许选择9张图片文件</string>
+    <string name="add_note">添加笔记</string>
+    <string name="add_to_note">添加到笔记</string>
+    <string name="not_has_add_note">没有添加过笔记</string>
+    <string name="edit_note">编辑笔记</string>
+    <string name="add_note_hint">添加笔记和备忘</string>
+    <string name="add_patient">添加患者</string>
+    <string name="patient_phone">患者手机号</string>
+    <string name="doctor_phone">医生手机号</string>
+    <string name="friend_phone">好友手机号</string>
+    <string name="note_edit_success">笔记编辑成功</string>
+    <string name="note_add_success">笔记添加成功</string>
+    <string name="note_cannot_null">笔记不能为空</string>
+    <string name="note_chat_no_modify">聊天笔记不能修改</string>
+    <string name="relieve_relationship_dialog_title">解除关系</string>
+    <string name="relieve_relationship_dialog_content_part_one">确定解除和</string>
+    <string name="relieve_relationship_dialog_content_part_two">的医患关系吗？解除后将无法联系</string>
+    <string name="relieve_relationship">解除医患关系</string>
+    <string name="send_to_otherDocotr">转诊</string>
+    <string name="has_relieve_relationship">已经解除医患关系</string>
+    <string name="relieve">解除</string>
+    <string name="del_doctor">删除医生</string>
+    <string name="relieve_relation_part_one">您与</string>
+    <string name="relieve_relation_part">还不是医患关系</string>
+    <string name="relieve_relation_part_two">患者还不是医患关系,您须添加该患者才能开始聊天.</string>
+    <string name="relieve_relation_part_patient">医生还不是医患关系,医生必须添加您为患者才能开始聊天.</string>
+    <string name="invite_status_unknown">已发送邀请,等待患者下载并注册</string>
+    <string name="invite_status_receive">患者已成功注册,现在可以聊天啦</string>
+    <string name="invite_success">发送邀请成功</string>
+    <string name="patient_not_register">患者未注册</string>
+    <string name="patient_has_invite">已经邀请过了</string>
+    <string name="patient_unregister">病人未注册</string>
+    <string name="has_send_invite">已发送短信邀请</string>
+    <string name="invite_tip">将发送短信邀请到这个号码</string>
+    <string name="has_invite_tip">当这位患者下载并注册后会自动变成你的患者</string>
+    <string name="i_known">我知道了</string>
+    <string name="invite">邀请</string>
+    <string name="has_invite">已邀请</string>
+    <string name="has_been_invite">已添加</string>
+    <string name="not_invite">未邀请</string>
+    <string name="cell_phone">手机通讯录</string>
+    <string name="doctors_title">我的医生</string>
+    <string name="upload_head_image_fail">上传头像失败</string>
+
+    <string name="announcement">发布公告</string>
+    <string name="block_tip">    你与以下患者还不是医患关系，因此无法发送公告。</string>
+    <string name="my_notice">我的公告</string>
+    <string name="doctor_notice">公告板</string>
+    <string name="add_notice_success">发布公告成功</string>
+    <string name="not_has_add_notice">没有添加过公告</string>
+    <string name="notice_tip">公告内容写在这里...</string>
+    <string name="announce_notice_to_all">(发送公告给我的所有患者)</string>
+    <string name="notice_content_cannot_null">公告内容不能为空</string>
+    <string name="letters_tip">还可以写200个字</string>
+    <string name="tag_lenth_tip">最多输入15字</string>
+    <string name="new_notice_tips">请查看医生的新公告</string>
+
+    <string name="no_tag_tips">您还没有任何标签，点击加号创建</string>
+    <string name="no_tag_tip">您还没有任何标签</string>
+
+    <string name="tag_cannot_null">请输入要添加的标签</string>
+    <string name="add_tag_is_same">有同类标签</string>
+    <string name="add_tag">添加标签</string>
+    <string name="add_tag_edit">+添加标签</string>
+    <string name="delete_tag">删除标签</string>
+    <string name="show_contact_number_part_one">共有</string>
+    <string name="show_contact_number_part_two_patient">位患者</string>
+    <string name="show_contact_number_part_two_doctor">位医生</string>
+    <!-- XListView -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+
+    <string name="set_up">设置</string>
+    <string name="compish">完成</string>
+    <string name="clear_chat_records">确定要清空所有聊天记录吗?</string>
+    <string name="clear_records">确定要清空所有缓存吗?</string>
+    <string name="tip_give_up">确定要放弃吗?</string>
+    <string name="about_us">关于我们</string>
+    <string name="suggest">给询医建议</string>
+    <string name="recommendedMyDoctor">推荐我的医生给好友</string>
+    <string name="fix_phone">修改手机号</string>
+    <string name="fix_pwd">修改密码</string>
+    <string name="allow_call_phone">允许患者给我打电话</string>
+    <string name="clear_local_cache">清理本地缓存</string>
+    <string name="clear">清空</string>
+    <string name="clear_all_chat_records">清空所有聊天记录</string>
+    <string name="fix_mobile">修改手机号</string>
+    <string name="fix_success">修改成功</string>
+    <string name="original_mobile_phone">原手机号</string>
+    <string name="original_pwd">原密码</string>
+    <string name="new_mobile_phone">新手机号</string>
+    <string name="new_pwd">新密码</string>
+    <string name="new_pwd_sure">确认新密码</string>
+    <string name="send_identify">发送验证码</string>
+    <string name="identify">验证码</string>
+    <string name="identify_cannot_null">验证码不能为空</string>
+    <string name="new_mobile_cannot_null">新手机号不能为空</string>
+
+    <string name="original_pwd_cannot_null">原密码不能为空</string>
+    <string name="new_pwd_cannot_null">新密码不能为空</string>
+    <string name="new_pwd_sure_cannot_null">确认密码不能为空</string>
+    <string name="pwd_is_not_same">密码不一致</string>
+    <string name="fix_pwd_success">修改密码成功</string>
+    <string name="pwd_too_short">密码最少6位</string>
+    <string name="pwd_wrong">密码错误</string>
+    <string name="pwd_wrong_tip">密码不正确</string>
+
+    <!-- check tip -->
+    <string name="phone_cannot_null">请输入您的手机号码</string>
+    <string name="password_cannot_null">密码不能为空</string>
+    <string name="checkword_cannot_null">验证码不能为空</string>
+    <string name="is_not_phone_number">不是手机号码</string>
+    <string name="password_not_fit_law">密码不符合规范</string>
+    <string name="name_can_not_null">请输入您的姓名</string>
+    <string name="jot_title_can_not_null">请选择技术职称</string>
+    <string name="department_can_not_null">请选择医院和科室</string>
+
+    <string name="name_please">请输入您的姓名</string>
+    <string name="name_tip">名字只能是文字（汉字、字母、数字）不包括空格，表情符号</string>
+
+    <string name="name_lenth_tip">请输入真实姓名，最多5个字</string>
+    <string name="gender_please">请选择您的性别</string>
+    <string name="birthday_please">请选择您的生日</string>
+    <string name="area_please">请选择您的地区</string>
+
+    <!-- login service tip -->
+    <string name="login_success">登录成功</string>
+    <string name="logout_success">登出成功</string>
+    <string name="network_is_unreachable">没有网络</string>
+    <string name="phone_has_register">手机号已注册</string>
+    <string name="service_error">服务器出错</string>
+    <string name="network_unreached">网络连接不可用，请稍候重试</string>
+    <string name="add_patient_from_input_phone">输入患者的手机号来邀请</string>
+    <string name="add_patient_from_address_list">邀请手机通讯录里的患者</string>
+    <string name="address_list">手机通讯录</string>
+    <string name="teaching_title">教学职称</string>
+
+    <string name="exit_on_key_down_more">再按一次退出程序</string>
+    <string name="hospital">医院</string>
+    <string name="patient">患者</string>
+    <string name="notice_brand">公告板</string>
+    <string name="tip_doctor_account">此号码已使用于询医（医生版），请另选一个号码注册。</string>
+    <string name="tip_patient_account">此号码已使用于询医（患者版），请另选一个号码注册。</string>
+
+
+    <!--关于-->
+    <string name="have_been_latest_version">已是最新版本</string>
+    <string name="check_version">检测新版本</string>
+    <string name="copyright_declare">北京远盛科技有限公司  版权所有</string>
+    <string name="user_agreement"> 用户协议</string>
+    <string name="client_version">1.0.0版本</string>
+    <string name="version">版本</string>
+    <string name="have_new_version">有新版本</string>
+    <string name="get_new_version">获取新版本</string>
+
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_failed">提交反馈失败</string>
+    <string name="feedback_successed">反馈提交成功</string>
+    <string name="feedback_content_not_empty">反馈内容不能为空~</string>
+    <string name="feedback_content_hint">为了更好地为您服务，请您务必详细描述问题步骤哦，谢谢！</string>
+    <string name="feedback_phone_num_or_email_address">请留下您的手机号或邮箱地址</string>
+    <string name="welcomspeak">欢迎您提出宝贵的意见和建议</string>
+    <string name="phone_or_email">手机号或邮箱</string>
+    <string name="submit_feedback">提交反馈</string>
+    <string name="not_login">您还未登录</string>
+
+
+    <!-- Http response Error tip -->
+    <string name="network_error">网络错误</string>
+    <string name="account_invalid">手机号非法</string>
+    <string name="password_invalid">密码非法字符</string>
+    <string name="password_over_length">密码长度太长</string>
+    <string name="account_or_password_error">帐号或密码错误</string>
+    <string name="token_timeout">请重新登录</string>
+    <string name="account_been_kicked">您的帐号在另一台设备使用，请重新登录</string>
+    <string name="orginal_password_error">原密码不正确</string>
+    <string name="user_dont_exist">您使用的帐号不存在</string>
+    <string name="user_been_forbidden">您使用的帐号被禁</string>
+    <string name="new_password_invalid">新密码非法字符</string>
+    <string name="new_password_over_length">新密码长度太长</string>
+    <string name="has_invited">新密码长度太长</string>
+    <string name="account_type_error">帐号类型不正确</string>
+    <string name="account_not_register">手机未注册</string>
+
+    <!--管理标签组-->
+    <string name="tag_exist">标签名已存在</string>
+    <string name="tag_delete">删除标签</string>
+    <string name="tag_delete_tip">确定要删除这个标签吗？</string>
+    <string name="tag_delete_tip2">标签也会被删除</string>
+
+    <!--推荐-->
+    <string name="recommendation_exist">已经推荐过了</string>
+    <string name="chat_message_new_relation_patient">现在可以咨询你的医生了</string>
+    <string name="choose_doctor">选择医生</string>
+    <string name="choose_doctor_for_friends">选择想为这位好友推荐的医生</string>
+
+    <!--公告-->
+    <string name="send_to">发送给</string>
+    <string name="choose_tag">选择标签</string>
+    <string name="all_patient">全部患者</string>
+    <string name="text_count_tip1">还可以写</string>
+    <string name="text_count_tip2">个字</string>
+    <string name="people">人</string>
+    <string name="sendto">发给:</string>
+    <string name="sendtoAll">发给: 所有人</string>
+    <string name="num_tip">您已写满200字</string>
+
+    <!--头像-->
+    <string name="change_head">更换头像</string>
+
+    <!--邀请   推荐 -->
+    <string name="recommended_tip">向你推荐了一位患者：</string>
+    <string name="isyours_tip">已经是你的患者了</string>
+    <string name="sms_tip">。我在用“询医”APP管理我的患者。我想推荐一个患者给你，你只需下载“询医”并使用你的手机注册就可以与那位患者交流。下载地址</string>
+    <string name="sms_invite_tip">。我在用“询医”APP管理我的患者。下载“询医”并使用你的手机注册就可以与我交流。下载地址：</string>
+    <string name="error_invite_tip">您所邀请的号码为医生，不能被添加为患者。</string>
+    <string name="error_recommendation_tip">您所转诊的号码不是医生号，不能向他转诊。</string>
+    <string name="error_recommendation_tip_patient_type">您所邀请的号码是医生，不能将医生推荐给医生。</string>
+
+    <string name="no_patients_tip">您还没有患者，请先添加患者才能发公告</string>
+
+
+    <string name="recommendation">转诊</string>
+    <string name="type_error">该号码已注册医生版</string>
+    <string name="noRelation">不存在医患关系</string>
+    <string name="has_recommended_patient">已经推荐，请等待对方回应。</string>
+    <string name="hasRecommended">已经转诊过，请等待对方回应。</string>
+
+    <string name="sendSuccess">发送成功</string>
+    <string name="recommendation_confirm_tip">确定发送转诊信息？</string>
+    <string name="release_relationShip">解除医患关系</string>
+    <string name="release">解除</string>
+    <string name="delete_patient">删除病人</string>
+    <string name="has_recommended">已转诊</string>
+    <string name="else_to_say">还有什么需要嘱咐的吗？</string>
+    <string name="recommendation_confirm_1">确定发送患者</string>
+    <string name="recommendation_confirm_2">的信息给</string>
+    <string name="recommendation_confirm_3">医生？</string>
+    <string name="release_relation_1">确定解除和</string>
+    <string name="release_relation_2">的医患关系吗？解除后将无法联系。</string>
+
+
+    <string name="recommendation_from_input_phone">输入医生的手机号来邀请</string>
+    <string name="recommendation_from_address_list">邀请手机通讯录里的医生</string>
+    <string name="recommendation_friend_from_input_phone">输入好友的手机号来邀请</string>
+    <string name="recommendation_friend_from_address_list">从手机通讯录里选择好友</string>
+    <string name="recommendation_tip">(小提示：您可以把患者推荐给另一位医生，您与患者的关系不会断开)</string>
+
+
+    <string name="clear_success">清除成功</string>
+    <string name="edit_tip">是否放弃编辑？</string>
+    <string name="profile">个人资料</string>
+
+    <string name="vip">VIP 服务</string>
+    <string name="check">我的账单</string>
+    <string name="my_count">我的银行卡</string>
+    <string name="update">升级</string>
+    <string name="openVip">开启VIP服务</string>
+    <string name="withdraws">提现</string>
+    <string name="upload">升级</string>
+    <string name="clicktodelete">删除</string>
+    <string name="notify">修改</string>
+    <string name="upload_ok">升级的好处>></string>
+    <string name="add_success"></string>
+    <!--别删-->
+    <string name="no_contact_permission">未获得联系人权限，请在手机应用权限管理中打开询医的联系人权限</string>
+
+    <string name="no_contact">未获得联系人数据</string>
+    <string name="whyupload">为什么要升级?</string>
+    <string name="commonquestion">常见问题</string>
+    <string name="deepnessrefer">深度咨询￥100/30天</string>
+    <string name="radiobtn_familydoctor">家庭医生￥500/30天</string>
+    <string name="price">价格：</string>
+    <string name="pay">支付</string>
+    <string name="app_pay">* 询医支持支付宝和微信支付</string>
+    <string name="agree">* 点击支付表示你已同意寻医的用户协议</string>
+    <string name="repay">续费</string>
+    <string name="terminationservice">终 止 服 务</string>
+    <string name="zhifubaopay">支付宝支付</string>
+    <string name="weixinpay">微信支付</string>
+    <string name="wangyinpay">网银敬请期待</string>
+    <string name="needpay">需要支付:</string>
+    <string name="paysuccess">支付成功</string>
+    <string name="complete">完成</string>
+
+    <string name="check_in">收入</string>
+    <string name="check_out">提现</string>
+    <string name="fine">罚款</string>
+    <string name="add_count">添加银行卡</string>
+    <string name="update_count">修改银行卡</string>
+    <string name="count_name">持卡人姓名</string>
+    <string name="count_num">卡号</string>
+    <string name="bank">银行名称</string>
+    <string name="count_name_tip">持卡人姓名:</string>
+    <string name="count_num_tip">卡号:</string>
+    <string name="bank_tip">银行名称:</string>
+    <string name="app_pwd">循医登入密码</string>
+    <string name="confirm_add">确认添加</string>
+    <string name="you_have">您拥有:</string>
+    <string name="cash">提现金额:</string>
+    <string name="NO_ENOUGH_MONEY">没有足够的资金</string>
+    <string name="NO_BANK_BOUND">未绑定银行卡信息</string>
+    <string name="money_cannot_null">提现金额不能为空</string>
+    <string name="withdraw_success">成功提现</string>
+    <string name="account_num_tip">请输入一个15-19位卡号</string>
+    <string name="bank_null_tip">请选择银行名称</string>
+    <string name="account_name_tip">请输入持卡人姓名，无特殊字符</string>
+    <string name="pwd_please">请输入询医的登录密码</string>
+    <string name="release_no_money_tip1">抱歉，因余额不够，你无法解除和</string>
+    <string name="release_no_money_tip2">的医患关系。</string>
+
+
+    <string name="reason">请选择终止服务器的理由（可多选）：</string>
+    <string name="othersproblem">其他终止服务理由和补充说明（500字选填）...</string>
+    <string name="terminationone">* 当月月费不可退，但未使用的整月月费会返还到您的支付时使用的账号里</string>
+    <string name="backpay">* 询医会在10个工作日内处理退款，请耐心等待</string>
+
+    <string name="help_tip">帮助？</string>
+    <string name="deepupdateinfo">升级会立即生效，您只需支付两个方案的差价。</string>
+    <string name="onehundred">100</string>
+    <string name="fivehundred">500</string>
+    <string name="agree_pay">*点击支付表示你已同意询医的  </string>
+    <string name="otherinfoc"><![CDATA[更多详情>>]]></string>
+
+    <!--支付宝-->
+    <string name="confirm_install_hint">"安装提示"</string>
+    <string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+
+
+    <string name="Ensure">"确定"</string>
+    <string name="check_sign_failed">您的订单信息已被非法篡改。</string>
+
+    <!--微信支付-->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <!-- PayActivity -->
+    <string name="pay_by_wx">客户端签名微信支付</string>
+    <string name="pay_by_wxap">服务器端签名微信支付</string>
+    <string name="check_pay">检查微信版本是否支持支付</string>
+    <string name="input_reqkey">输入reqkey</string>
+    <string name="input_package_value">输入package value</string>
+    <string name="input_sign">输入sign</string>
+    <string name="getting_access_token">正在获取access token...</string>
+    <string name="get_access_token_succ">获取access token成功</string>
+    <string name="get_access_token_fail" formatted="false">获取access token失败，原因%s</string>
+    <string name="getting_prepayid">正在获取预支付订单...</string>
+    <string name="paying">支付中</string>
+    <string name="get_prepayid_succ">获取prepayid成功</string>
+    <string name="get_prepayid_fail" formatted="false">获取prepayid失败，原因%s</string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="notopen">未开通</string>
+    <string name="service_introduce">一，服务介绍</string>
+    <string name="ordinarydoctor">(级别：普通)</string>
+    <string name="alertpay">二，资费说明</string>
+    <string name="deepconsulting">(级别：深度咨询)</string>
+    <string name="familydoctor">(级别：家庭医生)</string>
+    <string name="complain">投诉</string>
+    <string name="phone_deepupdata">您这个月的分钟数已用完，如想继续沟通可以升级到“家庭医生”计划，每月有120分钟电话咨询时间。</string>
+    <string name="phone_family">抱歉，您这个月的分钟数已用完。</string>
+    <string name="good">好的</string>
+    <string name="goupdate">去升级</string>
+    <string name="xufei">续费</string>
+    <string name="doctor_isnot_help">医生能否提供帮助？有什么意见和建议吗？</string>
+    <string name="sorry">抱歉每30天只能打一次分</string>
+    <string name="frequency">24小时内，不能连续投诉</string>
+    <string name="frequencysuccess">投诉已经受理</string>
+    <string name="inputcardnum">输入卡号</string>
+    <string name="bankerror">银行卡账户错误，请核对后重新输入</string>
+    <string name="nobuyservice">未购买该医生的套餐服务</string>
+    <string name="passworerror">询医账户密码错误</string>
+    <string name="thanzero">支付金额不能为负数</string>
+    <string name="backcasherror">退款金额不正确</string>
+    <string name="isdoctor">您所邀请的号码是医生，不能将医生推荐给医生</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.yikang.heartmark.view.TopBarView
+        android:id="@+id/yishiChatTopBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/yishi_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/yishi_bottom_linear"
+        android:layout_below="@+id/yishiChatTopBar"
+        android:background="@color/white"
+        android:divider="#aaaaaa"
+        android:dividerHeight="0px"
+        android:fadingEdge="none" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/yishi_bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/yishi_chat_bottom_bg"
+        android:paddingBottom="3dip"
+        android:paddingTop="7dip" >
+
+        <Button
+            android:id="@+id/yishi_chat_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/yishi_chat_img_selector" />
+
+        <EditText
+            android:id="@+id/yishi_chat_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="32dip"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/yishi_chat_send_layout"
+            android:layout_toRightOf="@+id/yishi_chat_img"
+            android:background="@drawable/yishi_chat_text_bg" />
+
+        <LinearLayout
+            android:id="@+id/yishi_chat_send_layout"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <Button
+                android:id="@+id/yishi_chat_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yuyin_selector" 
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/yishi_chat_send"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:background="@drawable/get_code_img"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

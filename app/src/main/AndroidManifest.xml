@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.heartmark" >
+    <!-- 分享 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />  //获取当前或最近运行的应用
+    <uses-permission android:name="android.permission.INTERNET" />	//访问网络
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />	//Wifi状态
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />	//网络状态
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />	//wifi状态改变
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> //写入内存卡
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />	//读取电话状态
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" /> //允许程序管理AccountsManager中的账号列表
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> 访问Gmail账号列表
+
+    <!-- 扫描 -->
+    <uses-permission android:name="android.permission.VIBRATE" />	//振动
+    <uses-permission android:name="android.permission.CAMERA" />	//相机
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- 网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 点亮屏幕  -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <!-- 推送 -->
+    <permission
+        android:name="com.example.heartmark.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- 推送 Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.example.heartmark.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- 推送 Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+
+    <!-- 讯飞语音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 读取Log -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <application
+        android:name="com.yikang.heartmark.application.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/heart_mark_icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <!-- umeng -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5548365967e58e0bd3008bcd"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Market_Default"></meta-data>
+
+        <!--1 心衰百科的欢迎页面--> 	<!--25 主页的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.WelcomeActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yikang.heartmark.activity.MainActivity"
+            android:screenOrientation="portrait" />							<!--2 心衰百科的页面-->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainZiXunActivity"
+            android:screenOrientation="portrait" />							<!--3 药品的详情页面既说明书  有语音 收藏 点赞 分享-->
+        <activity
+            android:name="com.yikang.heartmark.activity.ZiXunDetailActivity"
+            android:screenOrientation="portrait" />							<!--4 智能检测界面-->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainCeLingActivity"
+            android:screenOrientation="portrait" />							<!--5 电话咨询的界面-->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainPhoneActivity"
+            android:screenOrientation="portrait" />							<!--6 数据管理的界面-->
+        <activity
+            android:name="com.yikang.heartmark.activity.CeLingDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yikang.heartmark.activity.CeLingResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />						<!--7 日常护理的界面-->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainHuLiActivity"
+            android:screenOrientation="portrait" />				                	<!--8 生活日志的界面-->
+        <activity
+            android:name="com.yikang.heartmark.activity.HuLiLifeInfoActivity"
+            android:screenOrientation="portrait" />				                	<!--9 体重详情的界面-->
+        <activity
+            android:name="com.yikang.heartmark.activity.HuLiWeightInfoActivity"
+            android:screenOrientation="portrait" />				                	<!--10 科学用药的界面-->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainYongYaoActivity"
+            android:screenOrientation="portrait" />
+        <!--11 添加用药提醒 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.YongYaoAddActivity"
+            android:screenOrientation="portrait" />			                	    <!--12 智能咨询的界面-->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainYiShiActivity"
+            android:screenOrientation="portrait" />			                	    <!--13 咨询会话的界面-->
+        <activity
+            android:name="com.yikang.heartmark.activity.YiShiChatActivity"
+            android:screenOrientation="portrait" />		                     	    <!--14 注册的界面-->
+        <activity
+            android:name="com.yikang.heartmark.activity.RegistActivity"
+            android:screenOrientation="portrait" />			                	    <!--15 信息的界面-->
+        <activity
+            android:name="com.yikang.heartmark.activity.RegistInfoActivity"
+            android:screenOrientation="portrait" />			                	    <!--16 用户登录的界面-->
+        <activity
+            android:name="com.yikang.heartmark.activity.LoginActivity"
+            android:screenOrientation="portrait" />               				    <!-- 17 个人中心的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainSetActivity"
+            android:screenOrientation="portrait" />               				    <!-- 18 其他 的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainSetAboutActivity"
+            android:screenOrientation="portrait" />                                 <!-- 19 生活日志的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.SetLifeDataActivity"
+            android:screenOrientation="portrait" />                                 <!--20 好友列表 的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.SetFriendActivity"
+            android:screenOrientation="portrait" />                                 <!--21 添加好友 的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.SetFriendAddActivity"
+            android:screenOrientation="portrait" />                                 <!--22 关于我们或免责声明 的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.SetAboutActivity"
+            android:screenOrientation="portrait" />                                    <!--23 心衰评估的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.EvaluateActivity"
+            android:screenOrientation="portrait" />                                    <!--24 忘记密码的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.ForgetPassword"
+            android:screenOrientation="portrait" />                            	<!--25 主页的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MyMainActivity"
+            android:screenOrientation="portrait" />                       <!--26 心衰助手页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainHelpActivity"
+            android:screenOrientation="portrait" />                      <!-- 27 体重记录 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.HelpWeightActivity"
+            android:screenOrientation="portrait" />                       <!--28  出入水量 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.HelpWaterActivity"
+            android:screenOrientation="portrait" />                       <!--29  心率记录 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.HelpHeartActivity"
+            android:screenOrientation="portrait" />                        <!--30 病情评估 页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainPingGuActivity"
+            android:screenOrientation="portrait" />							<!-- 31 更多服务的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainServiceActivity"
+            android:screenOrientation="portrait" />                           <!--32  更多应用 页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainServiceOtherActivity"
+            android:screenOrientation="portrait" />                           <!--33 健康商城  页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainServiceShopActivity"
+            android:screenOrientation="portrait" />                           <!--34 专家会诊 页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainServiceShopHuizhenActivity"
+            android:screenOrientation="portrait" />                           <!--35 专家会诊 页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainServiceShopHuizhenDetailsActivity"
+            android:screenOrientation="portrait" />                        			   <!--36 心衰管理产品  页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainServiceShopXinshuaiActivity"
+            android:screenOrientation="portrait" />                       			   <!--37 产品详情 页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainServiceShopXinshuaiDetailsActivity"
+            android:screenOrientation="portrait" />                       			   <!--38 血糖管理产品 页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainServiceShopXuetangActivity"
+            android:screenOrientation="portrait" />                       			   <!--39 产品详情 页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainServiceShopXuetangDetailsActivity"
+            android:screenOrientation="portrait" />                      			   <!--40 远程心电监护 页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainServiceShopXindianActivity"
+            android:screenOrientation="portrait" />                                     <!--41  一键式智能呼叫  页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.MainServiceShopZhinengActivity"
+            android:screenOrientation="portrait" />                          <!--42  心衰评估的过程的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.PingGuInfoActivity"
+            android:screenOrientation="portrait" />                         <!--43  心衰评估  最后状态的显示页面  包括饼形和线性比例显示-->
+        <activity
+            android:name="com.yikang.heartmark.activity.PingGuStageActivity"
+            android:screenOrientation="portrait" />                         <!-- 44 心衰评估  的显示页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.PingGuForthwithActivity"
+            android:screenOrientation="portrait" />								<!--45 历史评估 的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.PingGuHistoryActivity"
+            android:screenOrientation="portrait" />       							<!--46 智能提醒页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.SetRemindActivity"
+            android:screenOrientation="portrait" />       							<!--47 测量提醒页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.SetRemindCelingActivity"
+            android:screenOrientation="portrait" />       							<!--48 用药提醒 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.SetRemindYaoActivity"
+            android:screenOrientation="portrait" />       							<!--49 护理任务提醒 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.SetRemindHuliActivity"
+            android:screenOrientation="portrait" />       							<!--50 添加护理提醒 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.SetRemindHuliAddActivity"
+            android:screenOrientation="portrait" />       							<!--51 我的收藏-->
+        <activity
+            android:name="com.yikang.heartmark.activity.SetCollectionActivity"
+            android:screenOrientation="portrait" />      							<!--52 图层详情页面-->
+        <activity
+            android:name="com.yikang.heartmark.activity.ZiXunDetailGetActivity"
+            android:screenOrientation="portrait" />                              <!--53 心率详情页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.HelpHeartInfoActivity"
+            android:screenOrientation="portrait" />                 <!-- 心率详情 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.RemindSoundActivity"
+            android:screenOrientation="portrait" />         <!-- 测量提醒 -->
+        <activity
+            android:name="com.yikang.heartmark.controller.XmppActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yikang.heartmark.controller.album.AlbumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yikang.heartmark.controller.album.AlbumListActivity"
+            android:screenOrientation="portrait" /> <!-- 相册列表 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.SoundActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name="com.iflytek.speech.setting.TtsSettings"></activity>    <!-- 扫描的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.myzxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>    <!-- 个人资料的页面 -->
+        <activity
+            android:name="com.yikang.heartmark.activity.CenterInfoActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <!-- ========== 推送 ========= -->
+        <activity android:name="com.yikang.heartmark.activity.MainNewsActivity">
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.heartmark" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"></service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.example.heartmark" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="com.example.heartmark" />
+            </intent-filter>
+        </receiver>
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.yikang.heartmark.jpush.MyReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.example.heartmark" />
+            </intent-filter>
+        </receiver>
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="e18a42d6cb2aa6d2b46eb2a9" />
+        <!-- </>值来自开发者平台取得的AppKey -->
+
+        <!-- ==========  ========= -->
+        <receiver android:name="com.yikang.heartmark.receiver.RemindReceiver" />
+
+        <!--分享 -->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!--
+                如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个对ACTION_VIEW
+                事件的过滤器，其中的scheme是“tencent”前缀再开发者应用的加上appId。如果此过滤器不设置，
+                则分享结束以后不能得到正确的回调
+            -->
+            <intent-filter>
+                <data android:scheme="tencent597d6c2a35d5" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.yikang.heartmark.wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true" />
+    </application>
+
+</manifest>

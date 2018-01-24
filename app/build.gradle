@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.example.heartmark"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile files('libs/achartengine-1.0.0.jar')
+    compile files('libs/android-async-http-1.4.5.jar')
+    compile files('libs/asmack-android-8-4.0.41.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/jpush-sdk-release1.7.1.jar')
+    compile files('libs/mframework.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/ShareSDK-Core-2.5.7.jar')
+    compile files('libs/ShareSDK-Email-2.5.7.jar')
+    compile files('libs/ShareSDK-QQ-2.5.7.jar')
+    compile files('libs/ShareSDK-QZone-2.5.7.jar')
+    compile files('libs/ShareSDK-ShortMessage-2.5.7.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.5.7.jar')
+    compile files('libs/ShareSDK-TencentWeibo-2.5.7.jar')
+    compile files('libs/ShareSDK-Wechat-2.5.7.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.5.7.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.5.7.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.5.7.jar')
+    compile files('libs/slf4j-android-1.5.8.jar')
+    compile files('libs/Sunflower.jar')
+    compile files('libs/umeng_sdk.jar')
+    compile files('libs/universal-image-loader-1.9.3-SNAPSHOT.jar')
+    compile files('libs/Volley.jar')
+    compile files('libs/xcl-charts.jar')
+    compile files('libs/xUtils-2.6.14.jar')
+    compile files('libs/zxing.jar')
+}

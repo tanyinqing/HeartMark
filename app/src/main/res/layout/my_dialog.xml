@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/DialogTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/dialog_top_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/DialogTitleIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:visibility="gone" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/DialogTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:minLines="1"
+                android:singleLine="true"
+                android:textColor="@color/app_color"
+                android:textSize="18dp"
+                android:visibility="gone" >
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/DialogDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_color"
+            android:scaleType="fitXY" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/DialogContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/DialogContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="TextView"
+            android:textColor="#4a4a4a"
+            android:textSize="16dp"
+            android:visibility="gone" >
+        </TextView>
+
+        <ListView
+            android:id="@+id/DialogContentList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:visibility="gone" >
+        </ListView>
+
+        <com.yikang.heartmark.widget.CustomGridView
+            android:id="@+id/DialogContentGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/DialogContentEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edittext_img"
+            android:textColor="@color/app_color"
+            android:textCursorDrawable="@null"
+            android:textSize="16dp"
+            android:visibility="gone" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/DialogContentHtml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="TextView"
+            android:textColor="@color/app_color"
+            android:textSize="16dp"
+            android:visibility="gone" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/DialogDateTimePicker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <com.yikang.heartmark.wheel.WheelView
+                android:id="@+id/year"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content" />
+
+            <com.yikang.heartmark.wheel.WheelView
+                android:id="@+id/month"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content" />
+
+            <com.yikang.heartmark.wheel.WheelView
+                android:id="@+id/day"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/DialogTimePicker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <com.yikang.heartmark.wheel.WheelView
+                android:id="@+id/hour"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content" />
+
+            <com.yikang.heartmark.wheel.WheelView
+                android:id="@+id/minute"
+                android:layout_width="90dip"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/DialogTwoWheel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/twoWheelText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/twoWheelText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <com.yikang.heartmark.wheel.WheelView
+                    android:id="@+id/oneWheel"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+                <com.yikang.heartmark.wheel.WheelView
+                    android:id="@+id/twoWheel"
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/DialogSimpleSelectPicker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <com.yikang.heartmark.wheel.WheelView
+                android:id="@+id/simpleSelectPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/DialogProgressbarLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+             >
+
+            <ProgressBar
+                android:id="@+id/DialogProgressbar"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:max="100"  
+                android:progress="0"  
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/progress_bg"
+                 />
+            
+            <RelativeLayout 
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                >
+                <TextView 
+                    android:id="@+id/DialogProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="22dp"
+                    />
+                
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/DialogButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_color"
+            android:scaleType="fitXY" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/dialog_bottom_bg" >
+
+            <Button
+                android:id="@+id/DialogButton1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_white_selector"
+                android:textColor="@color/app_color"
+                android:textSize="16dp"
+                android:visibility="gone" >
+            </Button>
+
+            <Button
+                android:id="@+id/DialogButton2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_blue_selector"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:visibility="gone" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

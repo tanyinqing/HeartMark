@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.yikang.heartmark.view.TopBarView
+        android:id="@+id/setLifeBarView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/set_life_layout_calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/show_item_img"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/calendarCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:textColor="@color/app_color"
+            android:textSize="18dp" />
+
+        <ImageButton
+            android:id="@+id/calendarLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="30dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/arrow_remind_left_blue" />
+
+        <ImageButton
+            android:id="@+id/calendarRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/arrow_remind_right_blue" />
+
+        <com.yikang.heartmark.view.CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/calendarCenter" />
+    </RelativeLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp"
+        >
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:orientation="vertical"
+	        android:background="@color/new_gray"
+	        >
+	        <View 
+		        android:layout_width="match_parent"
+		        android:layout_height="1.5dp"
+		        android:background="#dfdfdf" 
+		        /> 
+		    <RelativeLayout 
+		        android:id="@+id/set_life_weight"
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="5dp"
+		        >
+		        <ImageView
+		            android:id="@+id/imageView1"
+		            android:layout_width="25dp"
+		            android:layout_height="25dp"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="20dp"
+		            android:background="@drawable/set_life_weight" />
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="10dp"
+		            android:layout_toRightOf="@+id/imageView1"
+		            android:text="体重数据"
+		            android:textColor="@color/typeface"
+		            android:textSize="18dp" />
+	
+		        <TextView
+		            android:id="@+id/set_life_weight_data"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="20dp"
+		            android:textSize="18dp"
+		            android:textColor="@color/app_color"
+		            android:background="@drawable/set_other"
+		            />	
+		    </RelativeLayout> 
+		    <View 
+		        android:layout_width="match_parent"
+		        android:layout_height="1.5dp"
+		        android:background="#dfdfdf" 
+		        /> 
+		        
+		    <RelativeLayout 
+		        android:id="@+id/set_life_heart"
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="5dp"
+		        >
+		        <ImageView
+		            android:id="@+id/imageView2"
+		            android:layout_width="25dp"
+		            android:layout_height="25dp"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="20dp"
+		            android:background="@drawable/set_life_heart" />
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="10dp"
+		            android:layout_toRightOf="@+id/imageView2"
+		            android:text="心率数据"
+		            android:textColor="@color/typeface"
+		            android:textSize="18dp" />
+	
+		        <TextView
+		            android:id="@+id/set_life_heart_data"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="20dp"
+		            android:textSize="18dp"
+		            android:textColor="@color/app_color"
+		            android:background="@drawable/set_other"
+		            />	
+		    </RelativeLayout>
+		    <View 
+		        android:layout_width="match_parent"
+		        android:layout_height="1.5dp"
+		        android:background="#dfdfdf" 
+		        />   
+	
+		    <RelativeLayout 
+		        android:id="@+id/set_life_water_in"
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="5dp"
+		        >
+		        <ImageView
+		            android:id="@+id/imageView3"
+		            android:layout_width="25dp"
+		            android:layout_height="25dp"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="20dp"
+		            android:background="@drawable/set_life_water_in" />
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="10dp"
+		            android:layout_toRightOf="@+id/imageView3"
+		            android:text="入水总量"
+		            android:textColor="@color/typeface"
+		            android:textSize="18dp" />
+	
+		        <TextView
+		            android:id="@+id/set_life_water_in_data"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="20dp"
+		            android:textSize="18dp"
+		            android:textColor="@color/app_color"
+		            android:background="@drawable/set_other"
+		            />	
+		    </RelativeLayout>
+		    <View 
+		        android:layout_width="match_parent"
+		        android:layout_height="1.5dp"
+		        android:background="#dfdfdf" 
+		        />   
+		     
+		    <RelativeLayout 
+		        android:id="@+id/set_life_water_out"
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="5dp"
+		        >
+		        <ImageView
+		            android:id="@+id/imageView4"
+		            android:layout_width="25dp"
+		            android:layout_height="25dp"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="20dp"
+		            android:background="@drawable/set_life_water_out" />
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="10dp"
+		            android:layout_toRightOf="@+id/imageView4"
+		            android:text="出水总量"
+		            android:textColor="@color/typeface"
+		            android:textSize="18dp" />
+	
+		        <TextView
+		            android:id="@+id/set_life_water_out_data"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="20dp"
+		            android:textSize="18dp"
+		            android:textColor="@color/app_color"
+		            android:background="@drawable/set_other"
+		            />	
+		    </RelativeLayout>
+		    <View 
+		        android:layout_width="match_parent"
+		        android:layout_height="1.5dp"
+		        android:background="#dfdfdf" 
+		        />
+		    	    
+		    <RelativeLayout 
+		        android:id="@+id/set_life_bnp"
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="5dp"
+		        >
+		        <ImageView
+		            android:id="@+id/imageView5"
+		            android:layout_width="25dp"
+		            android:layout_height="25dp"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="20dp"
+		            android:background="@drawable/set_life_bnp" />
+		
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerVertical="true"
+		            android:layout_marginLeft="10dp"
+		            android:layout_toRightOf="@+id/imageView5"
+		            android:text="NT-proBNP"
+		            android:textColor="@color/typeface"
+		            android:textSize="18dp" />
+	
+		        <TextView
+		            android:id="@+id/set_life_bnp_data"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="20dp"
+		            android:textSize="18dp"
+		            android:textColor="@color/typeface"
+		            />	
+		    </RelativeLayout>
+		    <View 
+		        android:layout_width="match_parent"
+		        android:layout_height="1.5dp"
+		        android:background="#dfdfdf" 
+		        />   	    	    	    	           	    
+	    </LinearLayout>           
+    </ScrollView>
+</LinearLayout>

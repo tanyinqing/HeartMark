@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bg_color"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/relLayout_title"
+        android:layout_above="@+id/lineLayout_chat"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lstView_chat"
+            android:transcriptMode="normal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color"
+            android:dividerHeight="0dp"
+            android:listSelector="@color/transport"
+            android:divider="@color/transport"
+            android:cacheColorHint="@color/transport" />
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/relLayout_voice_tip"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:background="@drawable/recording_popup_bg">
+
+            <RelativeLayout
+                android:id="@+id/relLayout_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imgView_voice_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/voice_recording" />
+
+                <ImageView
+                    android:id="@+id/imgView_voice_volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/voice_volume_5"
+                    android:layout_alignBottom="@+id/imgView_voice_icon"
+                    android:layout_toRightOf="@+id/imgView_voice_icon"
+                    android:layout_toEndOf="@+id/imgView_voice_icon"
+                    android:layout_marginLeft="5dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_countdown"
+                android:text="10"
+                android:textSize="50sp"
+                android:visibility="invisible"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_recording_tip"
+                android:text="开始录音"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/lineLayout_chat"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/imgBtn_chat_voice"
+                android:src="@drawable/chat_icon_voice_selector"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgView_add"
+                android:src="@drawable/chat_icon_add_normal"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_right_15"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_right_15"
+                android:id="@+id/imgView_star"
+                android:src="@drawable/chat_icon_star_normal"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imgView_add"
+                android:layout_toStartOf="@+id/imgView_add" />
+
+            <EditText
+                android:maxLines="3"
+                android:padding="5dp"
+                android:layout_marginBottom="5dp"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:layout_toLeftOf="@+id/imgView_star"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/chat_bg_input"
+                android:id="@+id/edt_chat_input"
+
+                android:textSize="15sp"
+                android:layout_toRightOf="@+id/imgBtn_chat_voice" />
+
+            <!--android:textColor="@drawable/press_to_talk_color"-->
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toLeftOf="@+id/imgView_star"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_voice_selector"
+
+                android:id="@+id/btn_press_to_talk"
+
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/imgBtn_chat_voice"
+                android:layout_alignBottom="@+id/imgBtn_chat_voice"
+                android:layout_alignTop="@+id/imgView_star" />
+
+            <Button
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:visibility="gone"
+                android:background="@drawable/chat_bg_send"
+                android:id="@+id/btn_send_message"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/edt_chat_input"
+                android:layout_alignRight="@+id/imgView_add" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/bg_color"
+            android:visibility="gone"
+            android:id="@+id/lineLayout_upload_photo"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/padding_13"
+                    android:id="@+id/imgView_upload_native_photo"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chat_icon_upload_native_photo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/padding_13"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgView_take_photo"
+                    android:src="@drawable/chat_icon_take_photo" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayout_title"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_title"
+        android:gravity="center_vertical">
+
+        <include layout="@layout/include_back" />
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_level_patient"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/txt_title"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:textSize="18.0sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name" />
+        </RelativeLayout>
+
+        <include layout="@layout/include_note" />
+
+    </RelativeLayout>
+</RelativeLayout>

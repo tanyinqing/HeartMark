@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+         <!-- 身体状态 -->
+    <string-array name="celing_state">
+        <item>多汗</item>
+        <item>心悸</item>
+        <item>胸疼</item>
+        <item>呼吸急促</item>
+        <item>烦躁</item>
+        <item>咳嗽</item>
+    </string-array>
+</resources>

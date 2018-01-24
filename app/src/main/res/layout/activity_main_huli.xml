@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.yikang.heartmark.view.TopBarView
+        android:id="@+id/huliTopBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/huliMenuBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/huli_menubar" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/huliViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

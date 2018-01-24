@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical" 
+         android:background="@color/new_gray"
+        >
+	     <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="10dp"
+	         >
+	        <ImageView
+	            android:id="@+id/new_system_image"
+	            android:layout_width="match_parent"
+	            android:layout_height="100dp" 
+	            android:background="@drawable/huli_life_hint"
+	            />
+	    </LinearLayout>
+	    
+	    <TextView 
+	        android:id="@+id/new_system_info"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="10dp"
+	        android:maxLines="3"
+	        android:text="邀请国内外知名人士金额接覅及缴费金额文件么分为if金额为骄傲基督教么范围么发奖金 ..."
+	        android:textSize="18sp"
+	        android:textColor="@color/typeface"
+	        />
+	    
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginBottom="10dp"
+	        >
+	        <TextView 
+	            android:id="@+id/new_system_author"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="医康世纪"
+	            android:textSize="14sp"
+	            android:textColor="@color/typeface"
+	            />
+	        <TextView 
+	            android:id="@+id/new_system_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:text="2015-01-07"
+	            android:textSize="14sp"
+	            android:textColor="@color/typeface"
+	            />
+	    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

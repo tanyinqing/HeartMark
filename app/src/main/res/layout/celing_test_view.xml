@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <com.yikang.heartmark.view.TopBarView
+        android:id="@+id/celingTopBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- show 部分 -->
+
+    <LinearLayout
+        android:id="@+id/celing_show_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/celing_division"
+        android:layout_below="@+id/celingTopBar"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/celing_show_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/celing_show1_img1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/celing_show_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/celing_show2_img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/celing_show_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/celing_show3_img" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/celing_division"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/celing_bottom_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/celing_dotted_img" />
+
+        <Button
+            android:id="@+id/celing_step1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="40dp"
+            android:layout_toLeftOf="@+id/celing_step2"
+            android:background="@drawable/step1_selector" />
+
+        <Button
+            android:id="@+id/celing_step2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/step2_selector" />
+
+        <Button
+            android:id="@+id/celing_step3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/celing_step2"
+            android:background="@drawable/step3_selector" />
+    </RelativeLayout>
+
+    <!-- 底部操作 部分 -->
+    <LinearLayout
+        android:id="@+id/celing_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/celing_connect_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="设备连接成功"
+            android:textColor="@color/app_color"
+            android:textSize="22dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/celing_next_button"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:background="@drawable/celing_next_button_img"
+            android:text="开始测量"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/celing_get_button"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:background="@drawable/celing_next_button_img"
+                android:text="获取结果"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/celing_restart_button"
+                android:layout_width="120dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/celing_next_button_img"
+                android:text="重新测量"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
