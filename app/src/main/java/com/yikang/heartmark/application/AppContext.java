@@ -88,9 +88,9 @@ public class AppContext extends Application {
         SpeechUtility.createUtility(AppContext.this, "appid=549920ec");
         super.onCreate();
         context = this;
-        // 初始化极光推送  todo UnsatisfiedLinkError
-        JPushInterface.setDebugMode(true);
-        JPushInterface.init(this);
+        // 初始化极光推送  todo UnsatisfiedLinkError 会出现错误，暂时禁用等待解决
+        /*JPushInterface.setDebugMode(true);
+        JPushInterface.init(this);*/
     }
 
     // 运用list来保存们每一个activity是关键
