@@ -5,6 +5,7 @@
 * [自定义弹出框](app/src/main/java/com/yikang/heartmark/widget/MyDialog.java)
 * 工具类
 * [对象与json相互转化](app/src/main/java/com/yuzhi/framework/util/JsonUtil.java)
+* [弹出框模板代码](resource/弹出框模板代码.md)
 
 
 
