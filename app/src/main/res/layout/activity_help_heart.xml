@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white" >
-
+<!--这个是标题-->
     <com.yikang.heartmark.view.TopBarView
         android:id="@+id/helpHeartTopBar"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
-
+<!--这个是周和月切换-->
     <ViewFlipper
         android:id="@+id/help_weight_plipper"
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </ViewFlipper>
-
+<!--这个是按钮的切换-->
     <LinearLayout
         android:id="@+id/help_weight_menu"
         android:layout_width="match_parent"
@@ -57,5 +57,5 @@
             android:textColor="@color/app_color"
             android:textSize="18dp" />
     </LinearLayout>
-
+<!--采用的是相对布局-->
 </RelativeLayout>

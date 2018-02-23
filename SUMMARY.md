@@ -1,6 +1,10 @@
 * 这个部分按照模块对项目进行分类
 * [引言](README.md)
 * [清单文件](app/src/main/AndroidManifest.xml)
+* 生活日志模块
+* [出入水量](app/src/main/java/com/yikang/heartmark/activity/HelpWaterActivity.java)
+* [心率记录](app/src/main/java/com/yikang/heartmark/activity/HelpHeartActivity.java)
+* [心率详情](app/src/main/java/com/yikang/heartmark/activity/HelpHeartInfoActivity.java)
 * 自定义控件
 * [自定义弹出框](app/src/main/java/com/yikang/heartmark/widget/MyDialog.java)
 * 工具类
