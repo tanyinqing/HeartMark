@@ -24,6 +24,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.provider.MediaStore;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -183,7 +184,7 @@ public class MainSetActivity extends BaseActivity implements
 					startActivity(collectIntent);
 				}
 				break;
-			case R.id.set_scan:
+			case R.id.set_scan://这个是点击扫描的按钮
 //				if(ConnectUtil.isLogin(MainSetActivity.this)){
 				if(true){
 				try {
@@ -397,6 +398,7 @@ public class MainSetActivity extends BaseActivity implements
 				Bundle bundle = data.getExtras();
 				//这个是扫描到的字符串
 				String scanResult = bundle.getString("result");
+				Log.d("tan",scanResult);
 				Map<String, String> params = new HashMap<String, String>();
 				params.put("doctorNo",scanResult);
 				ConnectionManager.getInstance().send("FN01070WD00",
