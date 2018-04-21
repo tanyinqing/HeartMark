@@ -12,6 +12,7 @@
 * [弹出框模板代码](resource/弹出框模板代码.md)
 * 个人中心
 * [个人中心页面](app/src/main/java/com/yikang/heartmark/activity/MainSetActivity.java)
+* [登录页面](app/src/main/java/com/yikang/heartmark/activity/LoginActivity.java)
 * 扫描 myzxing文件夹
 * [扫描的页面](app/src/main/java/com/yikang/heartmark/myzxing/CaptureActivity/CaptureActivity.java)
 

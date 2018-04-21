@@ -109,8 +109,8 @@
     <orderEntry type="library" exported="" name="jpush-sdk-release1.7.1" level="project" />
     <orderEntry type="library" exported="" name="support-v4-22.1.1" level="project" />
     <orderEntry type="library" exported="" name="ShareSDK-QQ-2.5.7" level="project" />
-    <orderEntry type="library" exported="" name="ShareSDK-SinaWeibo-2.5.7" level="project" />
     <orderEntry type="library" exported="" name="ShareSDK-Wechat-Favorite-2.5.7" level="project" />
+    <orderEntry type="library" exported="" name="ShareSDK-SinaWeibo-2.5.7" level="project" />
     <orderEntry type="library" exported="" name="slf4j-android-1.5.8" level="project" />
     <orderEntry type="library" exported="" name="xcl-charts" level="project" />
     <orderEntry type="library" exported="" name="asmack-android-8-4.0.41" level="project" />
